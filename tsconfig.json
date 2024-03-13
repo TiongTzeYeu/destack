@@ -2,10 +2,15 @@
   "compilerOptions": {
     "target": "es2017",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
     "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -18,6 +23,7 @@
     "tsBuildInfoFile": ".tsbuildinfo",
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules", "**/*.e2e.ts"],
-  "include": ["**/*.ts", "**/*.tsx", "types.d.ts", "images.d.ts", "grapesjs.d.ts"]
+  "exclude": ["lib/node_modules/**/*"],
+  "include": ["lib/**/*.ts", "lib/**/*.tsx", "types.d.ts"]
 }
+  
